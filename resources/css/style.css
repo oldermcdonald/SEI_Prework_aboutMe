@@ -1,0 +1,186 @@
+/*Universal Styles */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+p > a {
+  border-bottom: 2px solid #82CAFF;
+}
+
+a:hover {
+  background-color: #82CAFF;
+}
+
+
+
+
+
+
+/*Top nav bar */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  color: grey;
+}
+
+
+
+
+
+/* Banner Section below */
+.banner-section {
+  padding: 30px;
+  background: url("../images/image-bg-brick3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.banner-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-items h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: 'Amatic SC', cursive;
+  padding-left: 10px;
+}
+
+.image-profile img {
+  max-width: 250px;
+  padding: 50px 100px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .image-profile img {
+    max-width: 150px;
+    padding: 20px 80px;
+  }
+  .banner-items {
+    flex-flow: column;
+    padding-top: 30px;
+  }
+  .banner-section {
+    height: 300px;
+  }
+  .banner-items h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+
+
+/* Section Container */
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .section-container {
+    flex-flow: column;
+    align-items: center;
+  }
+  .box-left {
+    width: 100%;
+  }
+  .box-right {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.section-container h2 {
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
+  padding: 10px 0px;
+}
+
+.section-container p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.box-left {
+  width: 40%; /* Adjust this method later */
+}
+
+
+
+
+/* Image Container */
+.box-right {
+  width: 55%;
+}
+
+.image-container {
+  display: flex;
+  max-width: 100%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .image-container {
+    flex-flow: column;
+  }
+}
+
+.image-element {
+  padding: 5px;
+}
+
+.image-element img {
+  display: block;
+  max-width: 100%;
+}
+
+.box-right p {
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+  background-color: #9b9b9b;
+  padding: 1.2rem 2rem;
+}
+
+
+footer .footer-content {
+  display: flex;
+  color: white;
+  font-size: .75rem;
+}
